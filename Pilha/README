@@ -1,0 +1,6 @@
+Executar os testes: 
+
+estar na raiz projeto ./
+
+make contigua
+make encadeada
