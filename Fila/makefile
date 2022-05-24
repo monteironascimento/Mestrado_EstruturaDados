@@ -3,21 +3,21 @@ contigua100000:
 	gcc ./filaContigua/main_100000.c ./filaContigua/fila_contigua.o -o ./filaContigua/main_filaContigua
 	./filaContigua/main_filaContigua
 
-	valgrind --leak-check=full ./filaContigua/main_pilhaContigua
+	valgrind --leak-check=full ./filaContigua/main_filaContigua
 
 contigua50000:
 	gcc -c ./filaContigua/fila_contigua.c -o ./filaContigua/fila_contigua.o
 	gcc ./filaContigua/main_50000.c ./filaContigua/fila_contigua.o -o ./filaContigua/main_filaContigua
 	./filaContigua/main_filaContigua
 
-	valgrind --leak-check=full ./filaContigua/main_pilhaContigua
+	valgrind --leak-check=full ./filaContigua/main_filaContigua
 
 contigua1000:
 	gcc -c ./filaContigua/fila_contigua.c -o ./filaContigua/fila_contigua.o
 	gcc ./filaContigua/main_1000.c ./filaContigua/fila_contigua.o -o ./filaContigua/main_filaContigua
 	./filaContigua/main_filaContigua
 
-	valgrind --leak-check=full ./filaContigua/main_pilhaContigua
+	valgrind --leak-check=full ./filaContigua/main_filaContigua
 
 #--------------------------------------------------------------------------------
 
