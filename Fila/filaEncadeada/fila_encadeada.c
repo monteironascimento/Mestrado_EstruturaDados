@@ -74,7 +74,7 @@ bool fila_inserir(Fila* f, TipoElemento elemento){
     return true;
 }
 
-bool fila_remover(struct Fila* f, TipoElemento* saida){ // estratégia do scanf
+bool fila_remover(Fila* f, TipoElemento* saida){ // estratégia do scanf
     if(!fila_ehValida(f)) return false;
     if(fila_vazia(f)) return false;
 
@@ -109,19 +109,4 @@ int fila_tamanho(Fila* f){
     if(!fila_ehValida(f)) return 0;
 
     return f->qtde;
-}
-
-
-void fila_imprimir(Fila* f){
-    if(!fila_ehValida(f)) return 0;
-
-    printf("[");
-    
-    while(f->inicio != NULL){
-
-        printf("%d,", f->inicio->dado);
-        f->inicio = f->inicio->prox;        
-    }
-
-    printf("]");
 }

@@ -1,4 +1,4 @@
-#define _FILA_H_
+#ifndef _FILA_H_
 #define _FILA_H_
 
 #include<stdlib.h>
@@ -24,7 +24,8 @@ bool fila_primeiro(Fila* f, TipoElemento* saida); // estratégia do scanf
 bool fila_vazia(Fila* f);
 int fila_tamanho(Fila* f);
 
-void fila_imprimir_char(Fila* f);
-void fila_imprimir(Fila* f, void (*printElemento)(void*));
+void fila_imprimir(Fila* f);
 Fila* fila_clone(Fila* f);
-//bool fila_inserirTodos(Fila* f, TipoElemento* vetor, int tamVetor);
+bool fila_inserirTodos(Fila* f, TipoElemento* vetor, int tamVetor);
+
+#endif

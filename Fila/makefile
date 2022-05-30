@@ -41,3 +41,4 @@ encadeada1000:
 	./filaEncadeada/main_filaEncadeada
 
 	valgrind --leak-check=full ./filaEncadeada/main_filaEncadeada
+	
